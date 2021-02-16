@@ -1,0 +1,265 @@
+/* arquivo prefixado leia a documentação para saber como editar  */
+
+//seção entrada robo
+.intro {
+  height: 750px;
+  width: 100%;
+  @include degrade-bg;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
+  .content-intro {
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 200px;
+    @include d(m) {
+      padding-top: 120px;
+    }
+    @include d(s) {
+      padding-top: 100px;
+    }
+  }
+  @include d(m) {
+    height: 900px;
+  }
+  @include d(s) {
+    height: 800px;
+  }
+}
+.textos {
+  @include d(m) {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+//intro texto
+.intro {
+  position: relative;
+  //titulo
+
+  h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 36px;
+    overflow: hidden;
+    strong {
+      font-weight: 700;
+	  font-size:40px;
+    }
+
+    @include d(m) {
+      text-align: center;
+    }
+    @include d(ss) {
+      font-size: 32px;
+    }
+  }
+  //texto principal
+  p {
+    margin-bottom: 20px;
+    color: $white;
+    font-size: 18px;
+    max-width: 400px;
+    @include d(m) {
+      text-align: center;
+    }
+  }
+  //botao
+  .btn-degrade {
+    @include botao(16px);
+    padding: 12px 15px;
+    @include d(s) {
+      margin: 0 auto;
+    }
+    @include d(ss) {
+      margin: 0 auto;
+      font-size: 14px;
+      max-width: 250px;
+    }
+  }
+}
+
+//robo
+.robo {
+  width: 500px;
+}
+//cards
+
+.container-robo {
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  z-index: -10;
+
+  //estilos gerais cards
+  .cards {
+    will-change: opacity;
+    will-change: transform;
+    @include d(l) {
+      background-image: url(../img/cards-intro/shoptime.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 55px;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 100px;
+      right: 300px;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.5s infinite alternate-reverse ease-in-out 2.2s;
+    }
+  }
+}
+//animaçao desktop
+
+//            cards individuais
+//adicioneu will-change para poder melhorar o desemppenho a animação
+
+.container-robo {
+  @include d(l) {
+    .card1 {
+      background-image: url(../img/cards-intro/amazon.svg);
+      right: 400px;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2s infinite alternate-reverse ease-in-out 2.2s;
+      top: 80px;
+    }
+    .card2 {
+      background-image: url(../img/cards-intro/extra.svg);
+      right: 230px;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.8s infinite alternate-reverse ease-in-out 2.2s;
+      top: 180px;
+    }
+    .card3 {
+      background-image: url(../img/cards-intro/americanas.svg);
+      right: 450px;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.2s infinite alternate-reverse ease-in-out 2.4s;
+      top: 160px;
+    }
+    .card4 {
+      background-image: url(../img/cards-intro/madeiramadeira.svg);
+      right: 500px;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2s infinite alternate-reverse ease-in-out 2.2s;
+      top: 90px;
+    }
+    .card5 {
+      background-image: url(../img/cards-intro/magalu.svg);
+      right: 515px;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.5s infinite alternate-reverse ease-in-out 2.4s;
+      top: 160px;
+    }
+    .card6 {
+      background-image: url(../img/cards-intro/mercado-livre.svg);
+      right: 280px;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.5s infinite alternate-reverse ease-in-out 2.4s;
+      top: 240px;
+    }
+    .card7 {
+      background-image: url(../img/cards-intro/ponto-frio.svg);
+      right: 200px;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2s infinite alternate-reverse ease-in-out 2.2s;
+      top: 270px;
+    }
+    .card8 {
+      background-image: url(../img/cards-intro/submarino.svg);
+      right: 460px;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2s infinite alternate-reverse ease-in-out 2.2s;
+      top: 30px;
+    }
+    .card10 {
+      background-image: url(../img/cards-intro/casas-bahia.svg);
+      right: 200px;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.4s infinite alternate-reverse ease-in-out 2.2s;
+      top: 90px;
+    }
+  }
+  @include d(m) {
+    position: relative;
+    -ms-flex-order: -1;
+    order: -1;
+    top: 0px;
+    margin-left: -30px;
+  }
+}
+
+//animação mobile
+.container-robo {
+  @include d(m) {
+    .cards {
+      will-change: opacity;
+      will-change: transform;
+      background-image: url(../img/cards-intro/mobile/americanas.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 45px;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 20%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.5s infinite alternate-reverse ease-in-out 2.2s;
+      @include d(s) {
+        width: 40px;
+      }
+    }
+    .card1 {
+      background-image: url(../img/cards-intro/mobile/amazon.png);
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.3s infinite alternate-reverse ease-in-out 2.2s;
+      top: 17%;
+      right: 130px;
+    }
+    .card2 {
+      background-image: url(../img/cards-intro/mobile/bahia.png);
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2s infinite alternate-reverse ease-in-out 2.2s;
+      top: 7%;
+      right: -75px;
+    }
+    .card3 {
+      background-image: url(../img/cards-intro/mobile/mercado.png);
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.1s infinite alternate-reverse ease-in-out 2.2s;
+      top: 32%;
+      right: -115px;
+    }
+    .card4 {
+      background-image: url(../img/cards-intro/mobile/submarino.png);
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2s infinite alternate-reverse ease-in-out 2.2s;
+      top: 42%;
+      right: 120px;
+    }
+    .card5 {
+      background-image: url(../img/cards-intro/mobile/ponto.png);
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.4s infinite alternate-reverse ease-in-out 2.2s;
+      top: 52%;
+      right: -150px;
+    }
+    .card6 {
+      background-image: url(../img/cards-intro/mobile/magalu.png);
+      animation: pula-pula 1.2s both ease-in-out 1s,
+        pula-pula2 2.4s infinite alternate-reverse ease-in-out 2.2s;
+      top: 17%;
+      right: -190px;
+    }
+  }
+}

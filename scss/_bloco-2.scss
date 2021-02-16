@@ -1,0 +1,253 @@
+/* arquivo prefixado leia a documentação para saber como editar  */
+
+/* Os maiores marketplaces
+integrados em um só lugar */
+
+.bloco-2 {
+  h1 {
+    font-weight: 500;
+    font-family: $poppins;
+    font-size: 32px;
+    @include d(s) {
+      font-size: 24px;
+    }
+	 h1 span{
+    color:#857fff;
+    }
+  }
+}
+
+//estrutura, cards e imagem
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(120px, 1fr) auto minmax(120px, 1fr);
+  grid-template-columns: minmax(120px, 1fr) auto minmax(120px, 1fr);
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+//lista de cards
+.cards-markt {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  a {
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  li {
+    box-shadow: $box-shadow;
+    height: 60px;
+    border-radius: $border-radius;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: $white;
+
+    span {
+      width: 50px;
+      height: 40px;
+      display: inline-block;
+
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    p {
+      color: $preto-claro;
+      padding: 0 10px 0px 5px;
+      font-size: 14px;
+      font-family: $poppins;
+    }
+  }
+}
+.img-people {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+//versão mobile
+.mobile .cards-markt {
+  li {
+    margin-bottom: 15px;
+    max-width: 60px;
+    max-height: 50px;
+
+    p {
+      display: none;
+      padding: 0;
+    }
+  }
+}
+
+.mobile .grid-container {
+  -ms-grid-columns: 80px auto 80px;
+  grid-template-columns: 80px auto 80px;
+}
+
+//animação dos cards desktop lado esquerdo
+.anima-cards .c-1 {
+  animation: cards-animation1 1s both;
+}
+
+.anima-cards .c-2 {
+  animation: cards-animation2 1s both;
+}
+.anima-cards .c-3 {
+  animation: cards-animation3 1s both;
+}
+.anima-cards .c-4 {
+  animation: cards-animation2 1s both;
+}
+.anima-cards .c-5 {
+  animation: cards-animation1 1s both;
+}
+.anima-cards .c-6 {
+  animation: cards-animation6 1s both;
+}
+
+//animação dos cards mobile lado esquerdo
+.mobile .anima-cards .c-1 {
+  animation: cards-m-animation1 1s both;
+}
+
+.mobile .anima-cards .c-2 {
+  animation: cards-m-animation2 1s both;
+}
+.mobile .anima-cards .c-3 {
+  animation: cards-m-animation3 1s both;
+}
+.mobile .anima-cards .c-4 {
+  animation: cards-m-animation2 1s both;
+}
+.mobile .anima-cards .c-5 {
+  animation: cards-m-animation1 1s both;
+}
+.mobile .anima-cards .c-6 {
+  animation: cards-m-animation6 1s both;
+}
+
+//animação desktop lado direito
+.anima-cards .c-7 {
+  animation: cards-animation1-r 1s both;
+}
+
+.anima-cards .c-8 {
+  animation: cards-animation2-r 1s both;
+}
+.anima-cards .c-9 {
+  animation: cards-animation3-r 1s both;
+}
+.anima-cards .c-10 {
+  animation: cards-animation2-r 1s both;
+}
+.anima-cards .c-11 {
+  animation: cards-animation1-r 1s both;
+}
+.anima-cards .c-12 {
+  animation: cards-animation6-r 1s both;
+}
+
+//animação mobile lado direito
+.mobile .anima-cards .c-7 {
+  animation: cards-m-animation1-r 1s both;
+}
+
+.mobile .anima-cards .c-8 {
+  animation: cards-m-animation2-r 1s both;
+}
+.mobile .anima-cards .c-9 {
+  animation: cards-m-animation3-r 1s both;
+}
+.mobile .anima-cards .c-10 {
+  animation: cards-m-animation2-r 1s both;
+}
+.mobile .anima-cards .c-11 {
+  animation: cards-m-animation1-r 1s both;
+}
+.mobile .anima-cards .c-12 {
+  animation: cards-m-animation6-r 1s both;
+}
+//icones
+.c-1 {
+  span {
+    background-image: url(../img/icon-integracoes/mercado-livre.png);
+  }
+}
+.c-2 {
+  span {
+    background-image: url(../img/icon-integracoes/americanas.png);
+  }
+}
+.c-3 {
+  span {
+    background-image: url(../img/icon-integracoes/submarino.png);
+  }
+}
+.c-4 {
+  span {
+    background-image: url(../img/icon-integracoes/shoptime.png);
+  }
+}
+.c-5 {
+  span {
+    background-image: url(../img/icon-integracoes/magalu.png);
+  }
+}
+.c-6 {
+  span {
+    background-image: url(../img/icon-integracoes/shopee.png);
+  }
+}
+.c-7 {
+  span {
+    background-image: url(../img/icon-integracoes/amazon.png);
+  }
+}
+.c-8 {
+  span {
+    background-image: url(../img/icon-integracoes/extra.png);
+  }
+}
+.c-9 {
+  span {
+    background-image: url(../img/icon-integracoes/ponto-frio.png);
+  }
+}
+.c-10 {
+  span {
+    background-image: url(../img/icon-integracoes/casas-bahia.png);
+  }
+}
+.c-11 {
+  span {
+    background-image: url(../img/icon-integracoes/madeira-madeira.png);
+  }
+}
+.c-12 {
+  span {
+    background-image: url(../img/icon-integracoes/olist.png);
+  }
+}
+
+//botao
+.btn-demonstracao {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  @include botao(16px);
+  max-width: 280px;
+  padding: 15px 10px;
+  @include d(s) {
+    font-size: 14px;
+    max-width: 250px;
+  }
+}
