@@ -5,14 +5,14 @@ integrados em um só lugar */
 
 .bloco-2 {
   h1 {
-    font-weight: 500;
+    font-weight: normal;
     font-family: $poppins;
     font-size: 32px;
     @include d(s) {
       font-size: 24px;
     }
 	 h1 span{
-    color:#857fff;
+    color: #857fff!important;
     }
   }
 }
