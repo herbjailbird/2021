@@ -125,7 +125,7 @@
   @include d(l) {
     .card1 {
       background-image: url(../img/cards-intro/amazon.svg);
-      right: 400px;
+      right: 340px;
       animation: pula-pula 1.2s both ease-in-out 1s,
         pula-pula2 2s infinite alternate-reverse ease-in-out 2.2s;
       top: 80px;
@@ -139,10 +139,10 @@
     }
     .card3 {
       background-image: url(../img/cards-intro/americanas.svg);
-      right: 450px;
+      right: 160px;
       animation: pula-pula 1.2s both ease-in-out 1s,
         pula-pula2 2.2s infinite alternate-reverse ease-in-out 2.4s;
-      top: 160px;
+      top: 165px;
     }
     .card4 {
       background-image: url(../img/cards-intro/madeiramadeira.svg);
@@ -153,17 +153,17 @@
     }
     .card5 {
       background-image: url(../img/cards-intro/magalu.svg);
-      right: 160px;
+      right: 150px;
       animation: pula-pula 1.2s both ease-in-out 1s,
         pula-pula2 2.5s infinite alternate-reverse ease-in-out 2.4s;
       top: 270px;
     }
     .card6 {
       background-image: url(../img/cards-intro/mercado-livre.svg);
-      right: 280px;
+      right: 230px;
       animation: pula-pula 1.2s both ease-in-out 1s,
         pula-pula2 2.5s infinite alternate-reverse ease-in-out 2.4s;
-      top: 240px;
+      top: 80px;
     }
     .card7 {
       background-image: url(../img/cards-intro/ponto-frio.svg);
@@ -174,17 +174,17 @@
     }
     .card8 {
       background-image: url(../img/cards-intro/submarino.svg);
-      right: 460px;
+      right: 400px;
       animation: pula-pula 1.2s both ease-in-out 1s,
         pula-pula2 2s infinite alternate-reverse ease-in-out 2.2s;
-      top: 30px;
+      top: 160px;
     }
     .card10 {
       background-image: url(../img/cards-intro/casas-bahia.svg);
-      right: 200px;
+      right: 430px;
       animation: pula-pula 1.2s both ease-in-out 1s,
         pula-pula2 2.4s infinite alternate-reverse ease-in-out 2.2s;
-      top: 90px;
+      top: 270px;
     }
   }
   @include d(m) {
@@ -205,7 +205,7 @@
       background-image: url(../img/cards-intro/mobile/americanas.png);
       background-repeat: no-repeat;
       background-size: contain;
-      width: 45px;
+      width: 70px;
       height: 100%;
       display: block;
       position: absolute;
