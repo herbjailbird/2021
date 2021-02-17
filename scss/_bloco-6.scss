@@ -8,6 +8,10 @@
   margin-bottom: 160px;
   h1 {
     @include titulo;
+    span{
+      color: #857fff!important;
+      font-weight: 700;
+    }
   }
   p {
     @include subtitulo-center;
