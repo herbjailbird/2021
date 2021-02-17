@@ -4,6 +4,9 @@
   h1 {
     @include titulo(40px);
     margin-top: 100px;
+    span {
+      color:#15baff;
+    }
   }
   h4 {
     max-width: 690px;
