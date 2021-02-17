@@ -31,6 +31,9 @@
     @include d(s) {
       font-size: 18px;
     }
+    span{
+      font-weight:normal;
+    }
   }
   //cidades
   h3 {
