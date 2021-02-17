@@ -30,8 +30,9 @@
   //rafael mansberg
 
   h2 {
-    font-size: 20px;
+    font-size: 24px;
     font-family: $poppins;
+    font-weight: 700;
 
     @include d(m) {
       text-align: center;
@@ -96,7 +97,7 @@
 //DEPOIMENTOS
 .depoimentos {
   padding-bottom: 150px;
-  padding-top: 30px;
+  padding-top: 80px;
   h3 {
     @include d(s) {
       font-size: 24px;
