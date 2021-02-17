@@ -22,8 +22,12 @@
     text-align: center;
   }
   .container{
-    padding: 100px 0;
-    background: url(../img/linha-site.png) right top no-repeat;
+    .col-lg-5, .col-lg-7{
+      padding: 100px 0;
+    }
+    .video2-container{
+      background: url(../img/linha-site.png) left top no-repeat;
+    }
   }
 }
 .video-2 {
