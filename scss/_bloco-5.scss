@@ -2,6 +2,7 @@
 //muitos includes separados nessa seção, prestar atenção
 .bloco-5 {
   margin-top: 80px;
+  padding: 100px 0;
   margin-bottom: 100px;
   @include degrade-bg3;
 
@@ -21,12 +22,15 @@
     max-width: 250px;
     text-align: center;
   }
-  .container{
-    .col-lg-5, .col-lg-7{
-      padding: 100px 0;
-    }
-    .video2-container{
-      background: url(../img/linha-site.png) left top no-repeat;
+  @include d(l){
+    padding:0;
+    .container{
+      .col-lg-5, .col-lg-7{
+        padding: 100px 0;
+      }
+      .video2-container{
+        background: url(../img/linha-site.png) left top no-repeat;
+      }
     }
   }
 }
