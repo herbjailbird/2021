@@ -1,7 +1,7 @@
 /* arquivo prefixado leia a documentação para saber como editar  */
 //muitos includes separados nessa seção, prestar atenção
 .bloco-5 {
-  margin-top: 150px;
+  margin-top: 80px;
   padding: 100px 0;
   margin-bottom: 100px;
   @include degrade-bg3;
@@ -11,6 +11,7 @@
   }
   h4 {
     margin-top: 15px;
+    font-weight: normal;
   }
   a {
     @include botao(16px);
@@ -35,7 +36,7 @@
 }
 //underline
 .bloco-5 h1 {
-  &::after {
+  /*&::after {
     content: "";
     display: block;
     width: 0;
@@ -50,7 +51,7 @@
   &::after {
     width: 100%;
     transition-delay: 0.7s;
-  }
+  }*/
 }
 //colunas no medio
 .row-b5 {
