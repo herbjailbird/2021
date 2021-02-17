@@ -38,6 +38,7 @@
 }
 .grid-container-6 div {
   display: grid;
+  margin-top: 40px;
   grid-template-areas:
     "icone titulo"
     "icone subtitulo";
@@ -148,7 +149,6 @@
 
 //animação das bolinhas com background ><
 #item-1-5.passou {
-  margin-top: 10px;
   i {
     animation: bgg 0.5s ease-in-out both 1s;
     background-image: url(../img/circulos/analise-por-especialistas.svg);
@@ -170,7 +170,6 @@
   }
 }
 #item-4-5.passou {
-  margin-top: -10px;
   i {
     background-image: url(../img/circulos/acompanhamento-estrategico.svg);
     animation: bgg2 0.5s ease-in-out both 1s;
@@ -249,7 +248,6 @@
 
 //ajustes dos item
 #item-3-5 {
-  margin-top: -30px;
   @include d(s) {
     margin-top: initial;
   }
