@@ -2,9 +2,9 @@
 //muitos includes separados nessa seção, prestar atenção
 .bloco-5 {
   margin-top: 80px;
-  padding: 100px 0;
   margin-bottom: 100px;
   @include degrade-bg3;
+
   h1 {
     max-width: 480px;
     @include titulo(34px);
@@ -20,6 +20,9 @@
     display: inline-block;
     max-width: 250px;
     text-align: center;
+  }
+  .container{
+    padding: 100px 0;
   }
 }
 .video-2 {
