@@ -44,9 +44,6 @@
   @include d(l) {
     float:right;
   }
-  @include d(m) {
-    float:right;
-  }
   @include d(s) {
     grid-template-areas:
       "icone "
@@ -123,11 +120,7 @@
     "subtitulo icone";
   @include d(l){
      float:left;
-    margin-right:10%;
-  }
-  @include d(m){
-     float:left;
-     margin-right:10%;
+      margin-right:10%;
   }
   @include d(s) {
     grid-template-areas:
@@ -144,10 +137,6 @@
   @include d(l){
      float:left;
     margin-right:10%;
-  }
-  @include d(m){
-     float:left;
-     margin-right:10%;
   }
   @include d(s) {
     grid-template-areas:
