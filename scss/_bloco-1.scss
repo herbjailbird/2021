@@ -19,10 +19,10 @@
     }
   }
   @include d(m) {
-    /*height: 900px;*/
+    height: 900px;
   }
   @include d(s) {
-    /*height: 800px;*/
+    height: 900px;
   }
 }
 .textos {

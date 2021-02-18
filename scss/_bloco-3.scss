@@ -47,6 +47,8 @@
   a{
     @include d(m) {
       text-align: center;
+      display: block;
+      margin: auto;
     }
   }
   p {
