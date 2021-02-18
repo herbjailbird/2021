@@ -571,8 +571,8 @@
   h3,
   p {
     opacity: 0;
-    -webkit-transform: translateY(-80%);
-    transform: translateY(-80%);
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
   }
 }
 
@@ -582,8 +582,8 @@
   h3,
   p {
     opacity: 1;
-    -webkit-transition: 0.4s ease-out;
-    transition: 0.4s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
@@ -594,8 +594,8 @@
   h3,
   p {
     opacity: 1;
-    -webkit-transition: 0.5s ease-out;
-    transition: 0.5s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
