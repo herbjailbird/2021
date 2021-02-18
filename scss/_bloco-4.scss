@@ -63,32 +63,31 @@
     width: 100%;
     display: block;
   }
-}
-li {
-  display: grid;
-  margin-top: 40px;
-  grid-template-areas:
-    "icone titulo"
-    "icone subtitulo";
-  @include d(s) {
+  li {
+    display: grid;
+    margin-top: 40px;
     grid-template-areas:
-      "icone "
-      " titulo"
-      " subtitulo";
-      width:100%;
-      text-align:center;
-  }
-
-  //titulos das bolinhas
-  h5 {
-    opacity: 0;
-    grid-area: titulo;
-    @include titulo(20px);
+      "icone titulo"
+      "icone subtitulo";
     @include d(s) {
-      font-size: 18px;
+      grid-template-areas:
+        "icone "
+        " titulo"
+        " subtitulo";
+        width:100%;
+        text-align:center;
     }
-  }
 
+    //titulos das bolinhas
+    h5 {
+      opacity: 0;
+      grid-area: titulo;
+      @include titulo(20px);
+      @include d(s) {
+        font-size: 18px;
+      }
+    }
+}
   //estilos gerais icon
 
   span {
