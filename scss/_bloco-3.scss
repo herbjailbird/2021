@@ -39,6 +39,16 @@
       font-size: 18px;
     }
   }
+  h3{
+    @include d(m) {
+      text-align: center;
+    }
+  }
+  a{
+    @include d(m) {
+      text-align: center;
+    }
+  }
   p {
     @include d(m) {
       text-align: center;
