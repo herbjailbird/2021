@@ -212,6 +212,7 @@ h1 {
   .icon {
     background-image: url(../img/recursos/marketplace.png);
     @include bg-props;
+    order:2
   }
   //titulo dos itens
   h2 {
@@ -250,7 +251,6 @@ h1 {
     @include bg-props;
     background-image: url(../img/recursos/ecommerce.png);
     -ms-flex-order: 2;
-    order: 2;
   }
 }
 
@@ -258,6 +258,7 @@ h1 {
   .icon {
     @include bg-props;
     background-image: url(../img/recursos/erp.png);
+    order: 2;
   }
 }
 .item-4 {
@@ -265,7 +266,6 @@ h1 {
     @include bg-props;
     background-image: url(../img/recursos/logistica.png);
     -ms-flex-order: 2;
-    order: 2;
   }
 }
 
