@@ -144,9 +144,26 @@
   background-image: url(../img/icon/publicacoes-de-anuncios.svg);
 }
 
-.bloco-4 div.passou {
+/*.bloco-4 div.passou {
   //animação
   span {
     animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.3s;
+  }
+}*/
+//animações dos titulos e icones da scala e shadow
+.bloco-4 li.passou {
+  h5,
+  p {
+    transition: ease 0.3s;
+    opacity: 1;
+  }
+
+  span {
+    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+      shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    opacity: 1;
+
+    transition: opacity ease 0.3s;
+    animation-delay: 0.5s;
   }
 }
