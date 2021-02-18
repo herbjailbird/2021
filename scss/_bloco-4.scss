@@ -58,11 +58,11 @@
 
 //separação img e bloco
 .bloco-4 {
-  span {
+  /*span {
     height: 80px;
     width: 100%;
     display: block;
-  }
+  }*/
   li {
     display: grid;
     margin-top: 40px;
@@ -87,33 +87,34 @@
         font-size: 18px;
       }
     }
-}
-  //estilos gerais icon
+    //estilos gerais icon
 
-  span {
-    grid-area: icone;
-    width: 50px;
-    height: 50px;
-    display: block;
-    background-color: $white!important;
-    margin: auto 15px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 120px;
-    opacity: 0%;
-    /*@include d(s) {
-      margin: 0 auto;
-      margin-bottom: -10px;
-      width: 70px;
-      height: 70px;
+    span {
+      grid-area: icone;
+      width: 50px;
+      height: 50px;
+      display: block;
+      background-color: $white!important;
+      margin: auto 15px;
+      background-position: center;
+      background-repeat: no-repeat;
       background-size: 120px;
-    }*/
-  }
-  p {
-    opacity: 0;
-    grid-area: subtitulo;
-    @include d(s) {
-      font-size: 16px;
+      opacity: 0%;
+      /*@include d(s) {
+        margin: 0 auto;
+        margin-bottom: -10px;
+        width: 70px;
+        height: 70px;
+        background-size: 120px;
+      }*/
+    }
+    p {
+      opacity: 0;
+      grid-area: subtitulo;
+      color: $preto-claro;
+      @include d(s) {
+        font-size: 16px;
+      }
     }
   }
 }
