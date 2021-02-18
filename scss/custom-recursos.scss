@@ -212,7 +212,6 @@ h1 {
   .icon {
     background-image: url(../img/recursos/marketplace.png);
     @include bg-props;
-    order:2
   }
   //titulo dos itens
   h2 {
@@ -246,6 +245,11 @@ h1 {
 }
 
 //icones desktop
+.item-1 {
+  .icon {
+    order: 2;
+  }
+}
 .item-2 {
   .icon {
     @include bg-props;
