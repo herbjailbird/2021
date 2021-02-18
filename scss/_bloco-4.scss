@@ -95,18 +95,18 @@
       height: 50px;
       display: block;
       background-color: $white!important;
-      margin: auto 15px;
+      margin: 1.67em 15px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: 50px;
       opacity: 0%;
-      /*@include d(s) {
+      @include d(s) {
         margin: 0 auto;
         margin-bottom: -10px;
-        width: 70px;
-        height: 70px;
-        background-size: 120px;
-      }*/
+        width: 50px;
+        height: 50px;
+        background-size: 50px;
+      }
     }
     p {
       opacity: 0;
@@ -159,8 +159,8 @@
   }
 
   span {
-    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
-      shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: scale-in-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+      /*shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;*/
     opacity: 1;
 
     transition: opacity ease 0.3s;
