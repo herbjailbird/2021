@@ -568,17 +568,19 @@
 .js-scroll {
   h1,
   h2,
-  h3 {
+  h3,
+  p {
     opacity: 0;
-    -webkit-transform: translateY(-60px);
-    transform: translateY(-60px);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 .js-scroll.passou {
   h1,
   h2,
-  h3 {
+  h3,
+  p {
     opacity: 1;
     -webkit-transition: 0.4s ease-out;
     transition: 0.4s ease-out;
@@ -589,7 +591,8 @@
 .mobile .js-scroll.passou {
   h1,
   h2,
-  h3 {
+  h3,
+  p {
     opacity: 1;
     -webkit-transition: 0.5s ease-out;
     transition: 0.5s ease-out;
