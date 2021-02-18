@@ -242,6 +242,26 @@ h1 {
   p:not(.desc) {
     @include subtitulo;
   }
+  .item-1{
+    .col-xl-8{
+      padding-right:5%;
+    }
+  }
+  .item-2{
+    .col-xl-8{
+      padding-left:5%;
+    }
+  }
+  .item-3{
+    .col-xl-8{
+      padding-right:5%;
+    }
+  }
+  .item-4{
+    .col-xl-8{
+      padding-left:5%;
+    }
+  }
 }
 
 //icones desktop
