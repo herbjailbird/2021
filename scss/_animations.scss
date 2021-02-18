@@ -574,7 +574,8 @@
   img,
   h5,
   div,
-  button {
+  button,
+  a {
     opacity: 0;
     -webkit-transform: translateY(-60px);
     transform: translateY(-60px);
@@ -590,7 +591,8 @@
   img,
   h5,
   div,
-  button {
+  button,
+  a {
     opacity: 1;
     -webkit-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
@@ -607,7 +609,8 @@
   img,
   h5,
   div,
-  button {
+  button,
+  a {
     opacity: 1;
     -webkit-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
