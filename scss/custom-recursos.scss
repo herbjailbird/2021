@@ -210,7 +210,7 @@ h1 {
   position: relative;
   margin-bottom: 100px;
   .icon {
-    background-image: url(../img/recursos/marketplace.png);
+    background-image: url(../img/recursos/gestao-de-marketplaces.png);
     @include bg-props;
   }
   //titulo dos itens
@@ -273,7 +273,7 @@ h1 {
 .item-2 {
   .icon {
     @include bg-props;
-    background-image: url(../img/recursos/ecommerce.png);
+    background-image: url(../img/recursos/ecommerce-integrado.png);
     -ms-flex-order: 2;
   }
 }
@@ -281,14 +281,14 @@ h1 {
 .item-3 {
   .icon {
     @include bg-props;
-    background-image: url(../img/recursos/erp.png);
+    background-image: url(../img/recursos/erp-integrado.png);
     order: 2;
   }
 }
 .item-4 {
   .icon {
     @include bg-props;
-    background-image: url(../img/recursos/logistica.png);
+    background-image: url(../img/recursos/logistica-vendala.png);
     -ms-flex-order: 2;
   }
 }
