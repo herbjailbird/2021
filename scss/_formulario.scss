@@ -113,6 +113,9 @@
       font-size: 14px;
     }
   }
+  .checkboxlgpd{
+    display:block;
+  }
   //botao enviar
   button.enviar {
     @include botao(16px);
