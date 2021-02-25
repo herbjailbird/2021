@@ -41,6 +41,7 @@ $footer-color: #fafafa;
     font-size: 24px;
   }
 }
+
 //estilo do botao
 @mixin botao($tamanho: 18px) {
   @include degrade;
@@ -58,6 +59,7 @@ $footer-color: #fafafa;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.06);
   }
 }
+
 //subtitulos centralizados
 
 @mixin subtitulo-center {
@@ -128,7 +130,19 @@ $footer-color: #fafafa;
 //variaveis bootstrap
 $navbar-light-color: transparent;
 $dropdown-border-color: transparent;
-
+//botao
+.btn-demonstracao {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  @include botao(16px);
+  max-width: 280px;
+  padding: 15px 10px;
+  @include d(s) {
+    font-size: 14px;
+    max-width: 250px;
+  }
+}
 body {
   font-family: $rubik;
   overflow-x: hidden;
@@ -446,17 +460,4 @@ html {
 
 .formulario {
   margin-top: 120px;
-}
-//botao
-.btn-demonstracao {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  @include botao(16px);
-  max-width: 280px;
-  padding: 15px 10px;
-  @include d(s) {
-    font-size: 14px;
-    max-width: 250px;
-  }
 }
