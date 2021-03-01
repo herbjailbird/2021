@@ -222,11 +222,11 @@ html {
   }
 }
 //estilos do bloco
-.bloco-r-1 {
+.about-r-1 {
   position: relative;
   margin-bottom: 100px;
   .icon {
-    background-image: url(../img/recursos/gestao-de-marketplaces.png);
+    background-image: url(../img/quemsomos/o-comeco.png);
     @include bg-props;
   }
   //titulo dos itens
@@ -273,9 +273,16 @@ html {
       padding-right:5%;
     }
   }
-  .item-4{
-    .col-xl-8{
-      padding-left:5%;
+  .col-xl-4{
+    @include d(l) {
+      flex:50%!important;
+      flex:50%!important;
+    }
+  }
+  .col-xl-8{
+    @include d(l) {
+      flex:50%!important;
+      flex:50%!important;
     }
   }
 }
@@ -289,7 +296,7 @@ html {
 .item-2 {
   .icon {
     @include bg-props;
-    background-image: url(../img/recursos/ecommerce-integrado.png);
+    background-image: url(../img/quemsomos/o-avanco.png);
     -ms-flex-order: 2;
   }
 }
@@ -297,17 +304,11 @@ html {
 .item-3 {
   .icon {
     @include bg-props;
-    background-image: url(../img/recursos/erp-integrado.png);
+    background-image: url(../img/quemsomos/o-futuro.png);
     order: 2;
   }
 }
-.item-4 {
-  .icon {
-    @include bg-props;
-    background-image: url(../img/recursos/logistica-vendala.png);
-    -ms-flex-order: 2;
-  }
-}
+
 
 .mobile {
   //oculta icones desktop
