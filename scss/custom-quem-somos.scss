@@ -276,13 +276,13 @@ html {
   .col-xl-4{
     @include d(l) {
       flex:50%!important;
-      flex:50%!important;
+      max-flex:50%!important;
     }
   }
   .col-xl-8{
     @include d(l) {
       flex:50%!important;
-      flex:50%!important;
+      max-flex:50%!important;
     }
   }
 }
