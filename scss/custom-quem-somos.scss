@@ -481,6 +481,7 @@ html {
   padding-top: 80px;
 }
 .bloco-4 {
+  @include degrade-bg3;
   //titulos
   h1 {
     @include titulo(40px);
