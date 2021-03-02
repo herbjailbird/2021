@@ -541,11 +541,6 @@ html {
 
 //separação img e bloco
 .about-4 {
-  span {
-    height: 80px;
-    width: 100%;
-    display: block;
-  }
   li {
     /*display: grid;
     margin-top: 40px;
@@ -650,4 +645,46 @@ html {
     transition: opacity ease 0.1s;
     animation-delay: 0.1s;
   }
+}
+/* Sobre o HUB */
+.about-5 {
+  h4 {
+    max-width: 690px;
+    color: $preto-claro;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 30px auto;
+    @include d(s) {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
+  span{
+    width: 60px;
+    height: 60px;
+    display: block;
+    /*background-color: $white!important;*/
+    margin: 0 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    opacity: 0%;
+    @include d(s) {
+      margin: 0 auto;
+      margin-bottom: -10px;
+      width: 60px;
+      height: 60px;
+      background-size: 60px;
+    }
+  }
+}
+//estilos do bloco
+.icon-r-1 {
+  background-image: url(../img/quemsomos/missao.png);
+}
+.icon-r-2 {
+  background-image: url(../img/quemsomos/visao.png);
+}
+.icon-r-3 {
+  background-image: url(../img/quemsomos/valores.png);
 }
