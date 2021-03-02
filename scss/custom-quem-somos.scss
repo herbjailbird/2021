@@ -660,31 +660,40 @@ html {
     }
   }
   span{
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
     display: block;
     /*background-color: $white!important;*/
     margin: 0 15px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 60px;
+    background-size: 200px;
     opacity: 0%;
     @include d(s) {
       margin: 0 auto;
       margin-bottom: -10px;
-      width: 60px;
-      height: 60px;
-      background-size: 60px;
+      width: 150px;
+      height: 150px;
+      background-size: 150px;
     }
   }
 }
 //estilos do bloco
-.icon-r-1 {
-  background-image: url(../img/quemsomos/missao.png);
+.icon-a-1 {
+  background-image: url(../img/quemsomos/venda-la.png);
 }
-.icon-r-2 {
-  background-image: url(../img/quemsomos/visao.png);
+.icon-a-2 {
+  background-image: url(../img/quemsomos/hub-integracao.png);
 }
-.icon-r-3 {
-  background-image: url(../img/quemsomos/valores.png);
+.icon-a-3 {
+  background-image: url(../img/quemsomos/hub-automatizado.png);
+  width: 305px;
+  height: 118px;
+  @include d(s) {
+      margin: 0 auto;
+      margin-bottom: -10px;
+      width: 200px;
+      height: 77px;
+      background-size: 200px;
+    }
 }
