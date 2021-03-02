@@ -261,6 +261,9 @@ html {
   .item-1{
     .col-xl-8{
       padding-right:5%;
+      @include d(l) {
+        text-align:right;
+      }
     }
   }
   .item-2{
@@ -271,18 +274,23 @@ html {
   .item-3{
     .col-xl-8{
       padding-right:5%;
+      @include d(l) {
+        text-align:right;
+      }
     }
   }
   .col-xl-4{
     @include d(l) {
       flex:50%!important;
-      max-flex:50%!important;
+      max-width:50%!important;
+      height:500px;
     }
   }
   .col-xl-8{
     @include d(l) {
-      flex:50%!important;
-      max-flex:50%!important;
+      flex:45%!important;
+      max-width:45%!important;
+      margin-top:5%;
     }
   }
 }
