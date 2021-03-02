@@ -394,8 +394,8 @@ html {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 24px;
-    height: 24px;
+    width: 80px;
+    height: 80px;
   }
 
   .passou.icon-mobile-4-b {
@@ -434,8 +434,8 @@ html {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
   }
   .item-4 {
     margin-top: 50px;
@@ -479,4 +479,172 @@ html {
 
 .item-4 {
   padding-top: 80px;
+}
+.bloco-4 {
+  //titulos
+  h1 {
+    @include titulo(40px);
+    margin-top: 100px;
+    font-weight:normal;
+    span {
+      color:#15baff;
+      font-weight:700;
+    }
+  }
+  h4 {
+    max-width: 690px;
+    color: $preto-claro;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 30px auto;
+    @include d(s) {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
+}
+/*Missão Visão Valores*/
+.about-4 {
+  li {
+    span {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      margin-bottom: -30px;
+      margin-top: 50px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    h5 {
+      font-size: 20px;
+      font-family: $poppins;
+      font-weight: 700;
+      margin-bottom: 10px;
+      @include d(s) {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: $preto-claro;
+      text-align: center;
+      @include d(s) {
+        max-width: 330px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+//separação img e bloco
+.about-4 {
+  span {
+    height: 80px;
+    width: 100%;
+    display: block;
+  }
+  li {
+    display: grid;
+    margin-top: 40px;
+    grid-template-areas:
+      "icone titulo"
+      "icone subtitulo";
+    @include d(s) {
+      grid-template-areas:
+        "icone "
+        " titulo"
+        " subtitulo";
+        width:100%;
+        text-align:center;
+    }
+
+    //titulos das bolinhas
+    h5 {
+      opacity: 0;
+      grid-area: titulo;
+      @include titulo(20px);
+      @include d(s) {
+        font-size: 18px;
+      }
+    }
+    //estilos gerais icon
+
+    span {
+      grid-area: icone;
+      width: 60px;
+      height: 60px;
+      display: block;
+      background-color: $white!important;
+      margin: 1.67em 15px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60px;
+      opacity: 0%;
+      @include d(s) {
+        margin: 0 auto;
+        margin-bottom: -10px;
+        width: 60px;
+        height: 60px;
+        background-size: 60px;
+      }
+    }
+    p {
+      opacity: 0;
+      grid-area: subtitulo;
+      color: $preto-claro;
+      @include d(s) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.titulo-ic {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.icon-r-1 {
+  background-image: url(../img/icon/gestao-centralizada.svg);
+}
+.icon-r-2 {
+  background-image: url(../img/icon/controle-de-estoque.svg);
+}
+.icon-r-3 {
+  background-image: url(../img/icon/nfe-automatica.svg);
+}
+.icon-r-4 {
+  background-image: url(../img/icon/impressao-automatica.svg);
+}
+.icon-r-5 {
+  background-image: url(../img/icon/picking-packing.svg);
+}
+
+.icon-r-6 {
+  background-image: url(../img/icon/publicacoes-de-anuncios.svg);
+}
+
+/*.bloco-4 div.passou {
+  //animação
+  span {
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.3s;
+  }
+}*/
+//animações dos titulos e icones da scala e shadow
+.about-4 li.passou {
+  h5,
+  p {
+    transition: ease 0.1s;
+    opacity: 1;
+  }
+
+  span {
+    animation: scale-in-center 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+      /*shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both*/;
+    opacity: 1;
+
+    transition: opacity ease 0.1s;
+    animation-delay: 0.1s;
+  }
 }
