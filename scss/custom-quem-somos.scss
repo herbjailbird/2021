@@ -481,7 +481,6 @@ html {
   padding-top: 80px;
 }
 .bloco-4 {
-  @include degrade-bg3;
   //titulos
   h1 {
     @include titulo(40px);
@@ -506,6 +505,7 @@ html {
 }
 /*Missão Visão Valores*/
 .about-4 {
+  @include degrade-bg3;
   li {
     span {
       width: 50px;
