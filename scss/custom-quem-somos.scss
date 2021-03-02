@@ -546,7 +546,7 @@ html {
     display: block;
   }
   li {
-    display: grid;
+    /*display: grid;
     margin-top: 40px;
     grid-template-areas:
       "icone titulo"
@@ -558,12 +558,13 @@ html {
         " subtitulo";
         width:100%;
         text-align:center;
-    }
+    }*/
 
     //titulos das bolinhas
     h5 {
       opacity: 0;
-      grid-area: titulo;
+      color: $white;
+      /*grid-area: titulo;*/
       @include titulo(20px);
       @include d(s) {
         font-size: 18px;
@@ -572,12 +573,12 @@ html {
     //estilos gerais icon
 
     span {
-      grid-area: icone;
+      /*grid-area: icone;*/
       width: 60px;
       height: 60px;
       display: block;
       background-color: $white!important;
-      margin: 1.67em 15px;
+      margin: 0 15px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: 60px;
@@ -592,8 +593,8 @@ html {
     }
     p {
       opacity: 0;
-      grid-area: subtitulo;
-      color: $preto-claro;
+      /*grid-area: subtitulo;*/
+      color: $white;
       @include d(s) {
         font-size: 16px;
       }
@@ -607,13 +608,13 @@ html {
 }
 
 .icon-r-1 {
-  background-image: url(../img/icon/gestao-centralizada.svg);
+  background-image: url(../img/quemsomos/missao.png);
 }
 .icon-r-2 {
-  background-image: url(../img/icon/controle-de-estoque.svg);
+  background-image: url(../img/quemsomos/visao.png);
 }
 .icon-r-3 {
-  background-image: url(../img/icon/nfe-automatica.svg);
+  background-image: url(../img/quemsomos/valores.png);
 }
 .icon-r-4 {
   background-image: url(../img/icon/impressao-automatica.svg);
