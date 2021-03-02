@@ -506,6 +506,7 @@ html {
 /*Missão Visão Valores*/
 .about-4 {
   @include degrade-bg3;
+  padding:1.67em 0;
   li {
     span {
       width: 50px;
@@ -577,7 +578,7 @@ html {
       width: 60px;
       height: 60px;
       display: block;
-      background-color: $white!important;
+      /*background-color: $white!important;*/
       margin: 0 15px;
       background-position: center;
       background-repeat: no-repeat;
