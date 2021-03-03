@@ -575,7 +575,7 @@ html {
       background-position: center;
       background-repeat: no-repeat;
       background-size: 60px;
-      opacity: 0%;
+      opacity: 1%;
       @include d(s) {
         margin: 0 auto;
         margin-bottom: -10px;
@@ -585,7 +585,7 @@ html {
       }
     }
     p {
-      opacity: 0;
+      opacity: 1;
       /*grid-area: subtitulo;*/
       color: $white;
       @include d(s) {
