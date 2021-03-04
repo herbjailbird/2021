@@ -253,6 +253,11 @@ html {
 .cards-mark {
   .card-1 {
     background-image: url(../img/integracoes/mercado.png);
+    background-size: 85%;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-30px);
+    }
   }
 
   .card-2 {
@@ -297,9 +302,19 @@ html {
   }
   .card-9 {
     background-image: url(../img/integracoes/Amazonlogo.png);
+    background-size: 85%;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-30px);
+    }
   }
   .card-10 {
     background-image: url(../img/integracoes/madeira-madeira.png);
+    background-size: 85%;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-30px);
+    }
   }
   .card-11 {
     background-image: url(../img/integracoes/olist.png);
