@@ -58,7 +58,7 @@ $footer-color: #fafafa;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.06);
   }
 }
-@mixin botao-vv($tamanho: 18px) {
+@mixin botao-b2w($tamanho: 18px) {
   border: 1px solid #11998e;
   border-radius: 10px;
   padding: 10px 15px;
@@ -219,8 +219,8 @@ html {
   margin-bottom: -1px;
 }
 
-#vv {
-  .container-vv {
+#b2w {
+  .container-b2w {
     max-width: 800px;
     margin: 0 auto;
 
@@ -252,7 +252,7 @@ html {
       }
     }
     .visitar {
-      @include botao-vv(16px);
+      @include botao-b2w(16px);
       display: inline-block;
       @include d(s) {
         display: -ms-flexbox;
@@ -285,7 +285,7 @@ html {
     min-width: 250px;
     display: block;
     transition: 0.3s;
-    margin: 15px 15px;
+    margin: 15px 5px;
 
     &:hover {
       transform: scale(1.04);
