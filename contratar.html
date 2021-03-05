@@ -23,7 +23,8 @@
     <!-- Bootstrap CSS customizado -->
     <link rel="stylesheet" href="css/custom-contratar.css">
 
-
+    <!-- Include do Form -->
+    <script type="text/javascript" src="script/include.js"></script>
 
 
     <title>Contratar - Venda.la</title>
@@ -41,7 +42,8 @@
                 <!-- formulario bonitinho cheirosinho -->
                 <section class="form-container col-lg-5 ">
                     <h1 class="text-white">Venda.la - Melhor HUB Marketplace do Mercado</h1>
-                    <form action="#" method="post">
+                    <form action="https://vendala.com.br/contratar?" method="post" class="formContratar">
+                        <input type="hidden" name="_token" value="9lPYRU68maSh5AcSD361DRtj3ues9xPXVm0t7riY">
                         <fieldset class="row">
                             <!-- campos -->
 
@@ -100,81 +102,12 @@
         </div>
     </section>
     <!--  FIM do formulario -->
-    <footer>
-        <div class="container">
-            <div class="row justify-content-around mb-5">
-                <ul class="investida ">
-                    <li>
-                        <h2>Investida por</h2>
-                    </li>
-                    <li><a target="_blank" href="https://crescera.com/"><img src="img/footer/crescera_invest.png" alt="Crescera"></a></li>
-                    <li><a target="_blank" href="http://www.criatec2.com.br/"><img src="img/footer/criatec2-640x250.png" alt="Criatec"></a></li>
-                    <li class="tecnologia">
-                        <h2>Tecnologia</h2>
-                    </li>
-                    <li>
-
-                        <a target="_blank" href="https://aws.amazon.com/pt/"><img src="img/footer/aws_logo.png" alt="Aws"></a>
-                    </li>
-
-                </ul>
-
-                <ul class="acelerada">
-                    <li>
-                        <h2>Acelerada por</h2>
-                    </li>
-                    <li><a href="https://acestartups.com.br/startups/"><img src="img/footer/ace_logo.png" alt="ace"></a></li>
-                </ul>
-                <ul class="  sobre-nos">
-                    <li>
-                        <h2>Sobre Nos</h2>
-                    </li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Parcerias</a></li>
-                    <li><a href="#">Missão</a></li>
-                    <li><a href="#">Visão</a></li>
-                    <li><a href="#">Valores</a></li>
-                    <li><a href="#">Cultura</a></li>
-                </ul>
-                <ul class="  mais-infos">
-                    <li>
-                        <h2>Mais Infos</h2>
-                    </li>
-                    <li><a href="https://vendala.com.br/termo-aceitacao">Termos de Uso</a></li>
-                    <li><a href="https://vendala.com.br/politica-de-privacidade">Política de Privacidade</a></li>
-                    <li><a href="https://vendala.com.br/servicos-tarifas-faturamento">Serviços</a></li>
-                    <li><a href="https://vendala.com.br/servicos-tarifas-faturamento">Tarifas e Faturamento</a></li>
-                </ul>
-                <ul class="app-mercado">
-                    <li>
-                        <h2>Baixe o App de Perguntas do Mercado Livre</h2>
-                    </li>
-                    <li><a target="_blank" href="https://play.google.com/store/apps/details?id=la.venda.app&hl=pt"><img src="img/footer/badge-googleplay.png" alt=""></a></li>
-                    <li><a target="_blank" href="https://apps.apple.com/us/app/id1479618445"><img src="img/footer/badge-applestore.png" alt=""></a></li>
-                    <li>
-                        <h2>Siga a Venda.la</h2>
-                    </li>
-                    <li class="row sociais">
-                        <a target="_blank" href="https://www.facebook.com/SuaVenda.la/"> <img src="img/footer/facebook.png" class="col" alt="facebook"></a>
-                        <a target="_blank" href="https://instagram.com/suavendala"> <img src="img/footer/instagram.png" class="col" alt="facebook"></a>
-                        <a target="_blank" href="https://www.youtube.com/channel/UCUgTX6tZFDf0c4XMuqa8euw"> <img src="img/footer/youtube.png" class="col" alt="facebook"></a>
-                        <a target="_blank" href="https://www.linkedin.com/company/vendala"> <img src="img/footer/linkedin.png" class="col" alt="facebook"></a>
-                        <a target="_blank" href="https://twitter.com/SuaVendaLa"> <img src="img/footer/twitter.png" class="col" alt="facebook"></a>
-                        <a target="_blank" href="#"> <img src="img/footer/XMLID_4_.png" class="col" alt="facebook"></a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="direito row justify-content-between ">
-                <p>2020 <a href="index.html"> Venda.la</a> Todos os direitos reservados</p>
-                <p> Site desenvolvido por <a target="_blank" href="http://siteshelp.com.br/">Sites Help.</a></p>
-            </div>
-        </div>
+    <footer w3-include-html="footer.html">
+        
     </footer>
-
-
-
-
+    <script>
+    includeHTML();
+    </script>
 
 
     <nav class="navbar-top fixed-top navbar-desktop">
