@@ -364,9 +364,36 @@
         body.addEventListener("click", fechaMenu);
 
 
-
+    <script type="text/javascript" src="script/input.mask.min.js"></script>
 
     </script>
+        script>
+        (function() {
+            $('input[type="tel"]').mask("(99) 9999-9999?9");
+        })();
+    </script>
+
+    <script>
+        (function() {
+            $('#checkbox').on('change', function(){
+                if($('#checkbox').prop("checked") ){
+                    $('[name="contratar"]').removeClass( "disabled");
+                    $('[name="contratar"]').removeAttr( "disabled");
+                }else{
+                    $('[name="contratar"]').addClass( "disabled");
+                    $('[name="contratar"]').attr( "disabled", true);
+                }
+            });
+
+            $('.formContratar').on('submit', function(e) {
+                let form = $(this),
+                    button = $('.btn', form);
+
+                button.attr('disabled', true).html('Aguarde...');
+            });
+        })();
+    </script>
+
 
 
 </body>
