@@ -180,71 +180,12 @@
     </script>
 
 
-    <nav class="navbar-top fixed-top navbar-desktop">
-        <div class="container">
-            <div class="row align-items-center justify-content-end">
-                <a class="logo mr-auto" href="/" alt="Venda.la - HUB de Integração para Marketplaces Automatizado"></a>
-                <ul class="row col-7">
-                    <li><a href="#intro" title="Venda.la">Inicio</a></li>
-                    <!-- dropdown -->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Recursos">
-                            Recursos
-                        </a>
-                        <div class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="recursos.html#marketplaces" title="Gestão de Marketplaces">Gestão de Marketplaces</a>
-                            <a class="dropdown-item" href="recursos.html#ecommerces" title="Gestão de E-commerce">Gestão de E-commerce</a>
-                            <a class="dropdown-item" href="recursos.html#erp" title="Gestão de ERP">Gestão de ERP</a>
-                            <a class="dropdown-item" href="recursos.html#logistica" title="Gestão de Logística">Gestão de Logística</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Integrações">
-                            Integrações
-                        </a>
-                        <div class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="integracoes.html#marketplace" title="Marketplaces">Marketplaces</a>
-                            <a class="dropdown-item" href="integracoes.html#ecommerce" title="Plataformas de E-commerce">Plataformas de E-commerce</a>
-                            <a class="dropdown-item" href="integracoes.html#logistica" title="Logística">Logística</a>
-                            <a class="dropdown-item" href="integracoes.html#erp" title="ERP">ERP</a>
-
-                        </div>
-                    </li>
-                    <!-- fim  dropdown -->
-                    <li><a href="#formulario" title="Contato">Contato</a></li>
-                    <li><a target="_blank" href="https://vendala.com.br/blog" title="Blog Venda.la">Blog</a></li>
-                    <li><a href="contratar.html" title="Contratar">Contratar</a></li>
-                </ul>
-                <!--  -->
-                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5516997987946" class="btn-degrade btn-whats ml-md-5" title="WhatsApp Venda.la">Vamos Conversar</a>
-            </div>
-        </div>
+    <nav class="navbar-top fixed-top navbar-desktop" w3-include-html="navigation.html">
+        
     </nav>
-    <!-- fim menu desktop -->
-    <!-- inicio menu mobile -->
-    <nav class="menu-mobile fixed-top">
-        <div class="container pt-2">
-            <div class="row align-items-center justify-content-between">
-                <a class="logo logo-mobile" href="/" alt="Venda.la"></a>
-
-                <div class="apontador" onclick="ativaMenu()">
-                    <i class="hamburguer"></i>
-                </div>
-            </div>
-        </div>
-        <section class="links-menu">
-            <ul class="text-center bg-menu-mobile">
-
-                <li><a href="#intro" title="Venda.la">Inicio</a></li>
-                <li><a href="recursos.html" title="Recursos">Recursos</a></li>
-                <li><a href="integracoes.html" title="Integrações">Integrações</a></li>
-                <li><a href="#formulario" title="Contato">Contato</a></li>
-                <li><a target="_blank" href="https://vendala.com.br/blog" title="Blog Venda.la">Blog</a></li>
-                <li><a href="contratar.html" title="Contratar a Venda.la">Contratar</a></li>
-
-            </ul>
-        </section>
-    </nav>
+    <script>
+    includeHTML();
+    </script>
     <!-- fim do menu mobile -->
     <!-- BOOTSTRAP JAVASCRIPT -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
