@@ -27,6 +27,18 @@ integrados em um só lugar */
   grid-template-columns: minmax(120px, 1fr) auto minmax(120px, 1fr);
   -ms-flex-pack: center;
   justify-content: center;
+  .btn-degrade {
+    @include botao(16px);
+    padding: 12px 15px;
+    @include d(s) {
+      margin: 0 auto;
+    }
+    @include d(ss) {
+      margin: 0 auto;
+      font-size: 14px;
+      max-width: 250px;
+    }
+  }
 }
 
 //lista de cards
