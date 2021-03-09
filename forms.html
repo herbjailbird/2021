@@ -54,7 +54,12 @@
                 </div>
             </div>
              fim dropdown -->
-            <button class="enviar mt-3 footerForm" type="submit" name="submit">Enviar</button>
+            <button id="submitreg" class="enviar mt-3 footerForm" type="submit" name="submit">Enviar</button>
+            <script type="text/javascript">
+              $('#$submitreg').click(function() {
+                fbq('track', 'CompleteRegistration', {currency: "BRL", value: 1.00});
+              });
+            </script>
         </fieldset>
 
     </form>
