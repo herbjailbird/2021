@@ -83,6 +83,19 @@
       max-width: 250px;
     }
   }
+  .btn-degrade-hover {
+    @include botaow(16px);
+    padding: 12px 15px;
+    margin-left:5px;
+    @include d(s) {
+      margin: 0 auto;
+    }
+    @include d(ss) {
+      margin: 0 auto;
+      font-size: 14px;
+      max-width: 250px;
+    }
+  }
 }
 
 //robo

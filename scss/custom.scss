@@ -4,6 +4,10 @@
   background: transparent linear-gradient(270deg, #92d275 0%, #19d9b4e6 100%) 0%
     0% no-repeat padding-box;
 }
+@mixin degrade-w {
+  //degrade dos botoes
+  background: transparent 0% 0% no-repeat padding-box;
+}
 
 //degrades dos bg
 @mixin degrade-bg2 {
@@ -34,6 +38,23 @@
 @mixin botao($tamanho: 18px) {
   @include degrade;
   border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: $white;
+  font-family: $poppins;
+  font-size: $tamanho;
+  font-weight: 500;
+  transition: 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.06);
+  }
+}
+//estilo do botao branco
+@mixin botaow($tamanho: 18px) {
+  @include degrade-w;
+  border: 1px solid #fff;
   border-radius: 10px;
   padding: 10px 15px;
   color: $white;
