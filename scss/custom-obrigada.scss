@@ -558,7 +558,7 @@ html {
 .about-4 {
   li {
     /*display: grid;
-    margin-top: 40px;
+    margin: 40px auto;
     grid-template-areas:
       "icone titulo"
       "icone subtitulo";
@@ -574,7 +574,7 @@ html {
     //titulos das bolinhas
     h5 {
       opacity: 1;
-      color: $white;
+      color:#15baff;
       /*grid-area: titulo;*/
       @include titulo(20px);
       @include d(s) {
