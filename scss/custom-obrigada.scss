@@ -517,9 +517,8 @@ html {
     }
   }
 }
-/*Missão Visão Valores*/
+/*Material Rico*/
 .about-4 {
-  @include degrade-bg3;
   padding:1.67em 0;
   li {
     span {
@@ -536,6 +535,8 @@ html {
       font-family: $poppins;
       font-weight: 700;
       margin-bottom: 10px;
+      text-align: center;
+      color:#15baff;
       @include d(s) {
         font-size: 18px;
         text-align: center;
