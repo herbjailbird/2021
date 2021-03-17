@@ -222,7 +222,7 @@ html {
   }
   .video-container {
     position: relative;
-    padding-top:10px;
+    margin-top:10px;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
   }
@@ -549,6 +549,11 @@ html {
       @include d(s) {
         max-width: 330px;
         margin: 0 auto;
+      }
+      a{
+        &:hover{
+          color:$preto-claro;
+        }
       }
     }
   }
