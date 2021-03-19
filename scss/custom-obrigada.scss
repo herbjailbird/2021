@@ -597,7 +597,7 @@ html {
       margin: 0 15px;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 60px;
+      background-size: contain;
       opacity: 1;
       @include d(s) {
         margin: 0 auto;
@@ -627,10 +627,10 @@ html {
   background-image: url(../img/drops-de-ecommerce.png);
 }
 .icon-r-2 {
-  background-image: url(../img/quemsomos/vender-e-vencer-no-b2w.png);
+  background-image: url(../img/vender-e-vencer-no-b2w.png);
 }
 .icon-r-3 {
-  background-image: url(../img/quemsomos/3-tecnicas-de-vendas-para-marketplaces.png);
+  background-image: url(../img/3-tecnicas-de-vendas-para-marketplaces.png);
 }
 .icon-r-4 {
   background-image: url(../img/icon/impressao-automatica.svg);
