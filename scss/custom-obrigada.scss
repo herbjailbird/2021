@@ -590,8 +590,8 @@ html {
 
     span {
       /*grid-area: icone;*/
-      width: 60px;
-      height: 60px;
+      width: 320px;
+      height: 247x;
       display: block;
       /*background-color: $white!important;*/
       margin: 0 15px;
@@ -602,8 +602,8 @@ html {
       @include d(s) {
         margin: 0 auto;
         margin-bottom: -10px;
-        width: 60px;
-        height: 60px;
+        width: 320px;
+        height: 247px;
         background-size: 60px;
       }
     }
@@ -624,13 +624,13 @@ html {
 }
 
 .icon-r-1 {
-  background-image: url(../img/quemsomos/missao.png);
+  background-image: url(../img/drops-de-ecommerce.png);
 }
 .icon-r-2 {
-  background-image: url(../img/quemsomos/visao.png);
+  background-image: url(../img/quemsomos/vender-e-vencer-no-b2w.png);
 }
 .icon-r-3 {
-  background-image: url(../img/quemsomos/valores.png);
+  background-image: url(../img/quemsomos/3-tecnicas-de-vendas-para-marketplaces.png);
 }
 .icon-r-4 {
   background-image: url(../img/icon/impressao-automatica.svg);
