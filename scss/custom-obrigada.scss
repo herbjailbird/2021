@@ -591,13 +591,13 @@ html {
     span {
       /*grid-area: icone;*/
       width: 320px;
-      height: 247x;
+      height: 247px;
       display: block;
       /*background-color: $white!important;*/
       margin: 0 15px;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       opacity: 1;
       @include d(s) {
         margin: 0 auto;
